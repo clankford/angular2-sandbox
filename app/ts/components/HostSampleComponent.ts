@@ -14,6 +14,8 @@ import { Popup } from '../directives/PopupDirective';
             This should use our Popup directive
         </p>
     </div>
+    
+    <i class="alarm icon" popup></i>
     `
 })
 export class HostSample {

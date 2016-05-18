@@ -1,10 +1,10 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
     selector: '[popup]'
 })
 export class Popup {
-    constructor() {
-        console.log('Directive bound');
+    constructor(_elementRef: ElementRef) {
+        console.log(_elementRef);
     }
 }
