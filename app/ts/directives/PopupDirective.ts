@@ -3,6 +3,7 @@ import { Directive, ElementRef } from '@angular/core';
 @Directive({
     selector: '[popup]',
     inputs: ['message'],
+    exportAs: 'popup',
     host: {
         '(click)': 'displayMessage()'
     }
