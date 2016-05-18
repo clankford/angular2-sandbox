@@ -5,7 +5,7 @@ import { Popup } from '../directives/PopupDirective';
     selector: 'host-sample',
     directives: [Popup],
     template: `
-    <div class="ui message" popup>
+    <div class="ui message" popup message="Clicked the message">
         <div class="header">
             Learning Directives
         </div>
@@ -15,7 +15,7 @@ import { Popup } from '../directives/PopupDirective';
         </p>
     </div>
     
-    <i class="alarm icon" popup></i>
+    <i class="alarm icon" popup message="Clicked the alarm icon"></i>
     `
 })
 export class HostSample {
