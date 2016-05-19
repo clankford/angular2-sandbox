@@ -10,7 +10,6 @@
   },
   "filesGlob": [
     "./app/**/*.ts",
-    "./test/**/*.ts",
     "!./node_modules/**/*.ts"
   ],
   "compileOnSave": false,
