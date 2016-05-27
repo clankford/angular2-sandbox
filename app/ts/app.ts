@@ -5,7 +5,8 @@ import { ExternalStyle } from './components/ExternalStyleComponent';
 import { NativeEncapsulation } from './components/NativeEncapsulationComponent';
 import { NoEncapsulation } from './components/NoEncapsulationComponent';
 import { HostSample } from './components/HostSampleComponent';
-import { TransclusionSample } from './components/TransclusionSampleComponent'
+import { TransclusionSample } from './components/TransclusionSampleComponent';
+import { TabsSample } from './components/tabs/TabsSampleComponent';
 
 @Component({
     selector: 'sandbox-app',
@@ -16,16 +17,18 @@ import { TransclusionSample } from './components/TransclusionSampleComponent'
         NativeEncapsulation,
         NoEncapsulation,
         HostSample,
-        TransclusionSample
+        TransclusionSample,
+        TabsSample
     ],
     template: `
     <div style="margin: 60px;">
-    <inline-style></inline-style>
-    <external-style></external-style>
-    <native-encapsulation></native-encapsulation>
-    <!-- <no-encapsulation></no-encapsulation> -->
-    <host-sample></host-sample>
-    <transclusion-sample-app></transclusion-sample-app>
+        <inline-style></inline-style>
+        <external-style></external-style>
+        <native-encapsulation></native-encapsulation>
+        <!-- <no-encapsulation></no-encapsulation> -->
+        <host-sample></host-sample>
+        <transclusion-sample-app></transclusion-sample-app>
+        <tabs-sample-app></tabs-sample-app>
     </div>
     `
 })
