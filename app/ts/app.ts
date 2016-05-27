@@ -7,6 +7,7 @@ import { NoEncapsulation } from './components/NoEncapsulationComponent';
 import { HostSample } from './components/HostSampleComponent';
 import { TransclusionSample } from './components/TransclusionSampleComponent';
 import { TabsSample } from './components/tabs/TabsSampleComponent';
+import { LifecycleSample } from './components/lifecycle/LifecycleSampleComponent'
 
 @Component({
     selector: 'sandbox-app',
@@ -18,7 +19,8 @@ import { TabsSample } from './components/tabs/TabsSampleComponent';
         NoEncapsulation,
         HostSample,
         TransclusionSample,
-        TabsSample
+        TabsSample,
+        LifecycleSample
     ],
     template: `
     <div style="margin: 60px;">
@@ -27,8 +29,12 @@ import { TabsSample } from './components/tabs/TabsSampleComponent';
         <native-encapsulation></native-encapsulation>
         <!-- <no-encapsulation></no-encapsulation> -->
         <host-sample></host-sample>
+        <br\>
         <transclusion-sample-app></transclusion-sample-app>
+        <br\>
         <tabs-sample-app></tabs-sample-app>
+        <br\>
+        <lifecycle-sample-app></lifecycle-sample-app>
     </div>
     `
 })
