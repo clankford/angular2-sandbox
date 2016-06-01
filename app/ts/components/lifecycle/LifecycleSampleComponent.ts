@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { OnInitCmp } from './OnInitAndOnDestroyComponent';
 import { OnChangeCmp } from './OnChangeComponent';
+import { DoCheckCmp } from './DoCheckComponent';
 
 @Component({
     selector: 'lifecycle-sample-app',
-    directives: [OnInitCmp, OnChangeCmp],
+    directives: [OnInitCmp, OnChangeCmp, DoCheckCmp],
     template: `
     <h4 class="ui horizontal divider header">
         OnInit and OnDestroy
@@ -34,6 +35,12 @@ import { OnChangeCmp } from './OnChangeComponent';
     </div>
 
     <on-change [name]="name" [comment]="comment"></on-change>
+    
+    <h4 class="ui horizontal divider header">
+        DoCheck
+    </h4>
+
+    <do-check></do-check>
     `
 })
 export class LifecycleSample {
