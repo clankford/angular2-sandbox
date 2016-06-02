@@ -8,6 +8,7 @@ import { HostSample } from './components/HostSampleComponent';
 import { TransclusionSample } from './components/TransclusionSampleComponent';
 import { TabsSample } from './components/tabs/TabsSampleComponent';
 import { LifecycleSample } from './components/lifecycle/LifecycleSampleComponent'
+import { TemplateSample } from './components/TemplateSampleComponent';
 
 @Component({
     selector: 'sandbox-app',
@@ -20,7 +21,8 @@ import { LifecycleSample } from './components/lifecycle/LifecycleSampleComponent
         HostSample,
         TransclusionSample,
         TabsSample,
-        LifecycleSample
+        LifecycleSample,
+        TemplateSample
     ],
     template: `
     <div style="margin: 60px;">
@@ -35,6 +37,9 @@ import { LifecycleSample } from './components/lifecycle/LifecycleSampleComponent
         <tabs-sample-app></tabs-sample-app>
         <br\>
         <lifecycle-sample-app></lifecycle-sample-app>
+        <br\>
+        <br\>
+        <template-sample-app></template-sample-app>
     </div>
     `
 })
