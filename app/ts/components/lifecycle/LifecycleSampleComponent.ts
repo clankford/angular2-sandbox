@@ -43,6 +43,7 @@ import { AfterStarCmp } from './AfterStarComponent';
     <br\>
     <do-check></do-check>
     <br\>
+    <br\>
     <afters *ngIf="displayAfters"></afters>
     <button class="ui primary button" (click)="toggleAfters()">
         Toggle
