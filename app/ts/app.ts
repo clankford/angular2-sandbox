@@ -9,6 +9,7 @@ import { TransclusionSample } from './components/TransclusionSampleComponent';
 import { TabsSample } from './components/tabs/TabsSampleComponent';
 import { LifecycleSample } from './components/lifecycle/LifecycleSampleComponent'
 import { TemplateSample } from './components/TemplateSampleComponent';
+import { ChangeDetectionSample } from './components/changedetection/ChangeDetectionSampleComponent';
 
 @Component({
     selector: 'sandbox-app',
@@ -22,7 +23,8 @@ import { TemplateSample } from './components/TemplateSampleComponent';
         TransclusionSample,
         TabsSample,
         LifecycleSample,
-        TemplateSample
+        TemplateSample,
+        ChangeDetectionSample
     ],
     template: `
     <div style="margin: 60px;">
@@ -40,6 +42,9 @@ import { TemplateSample } from './components/TemplateSampleComponent';
         <br\>
         <br\>
         <template-sample-app></template-sample-app>
+        <br\>
+        <br\>
+        <change-detection-sample-app></change-detection-sample-app>
     </div>
     `
 })
