@@ -5,7 +5,7 @@ import {
     ChangeDetectorRef,
     ChangeDetectionStrategy,
 } from '@angular/core';
-import { Profile } from '../../models/Profile.ts';
+import { Profile } from '../../models/Profile';
 
 @Component({
     selector: 'on-push',
